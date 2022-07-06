@@ -3,6 +3,8 @@ site_name: REPO_NAME_OR_SITE_NAME
 # defeine TOC or order of website-
 nav:
   - Home: index.md
+  - Data-prep-stage: data_prep.md
+  - Featurization: featurization.md
 
 site_author: Abid Ghias
 site_description: >-
@@ -14,7 +16,7 @@ repo_url: https://github.com/abidghias/FSDS-DVC-NLP-Project-with-docs
 
 # Configuration
 theme:
-  name: material
+  name: readthedocs
   features:
     - navigation.tabs
     - navigation.sections
