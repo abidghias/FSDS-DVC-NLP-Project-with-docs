@@ -2,6 +2,7 @@ import argparse
 import os
 import logging
 from utils.common import read_yaml, create_directories
+from utils.data_managment import process_posts
 import random
 
 
@@ -38,10 +39,10 @@ def main(config_path, params_path):
     test_data_path = os.path.join(prepare_data_dir_path,artifacts["TEST_DATA"])
 
     encode = "utf8"
-    # with open(source_data_path, encoding=encode) as fd_in: # actual input data that we are reading
-    #     with open(train_data_path, "w", encoding=encode) as fd_out_train: # writing train data
-    #         with open(test_data_path, "w", encoding=encode) as fd_out_test: # writing test data
-    #             process_posts(fd_in, fd_out_train, fd_out_test, tag, split)
+    with open(source_data_path, encoding=encode) as fd_in: # actual input data that we are reading
+        with open(train_data_path, "w", encoding=encode) as fd_out_train: # writing train data
+            with open(test_data_path, "w", encoding=encode) as fd_out_test: # writing test data
+                process_posts(fd_in, fd_out_train, fd_out_test, tag, split)
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
