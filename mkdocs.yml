@@ -4,7 +4,7 @@ site_name: REPO_NAME_OR_SITE_NAME
 nav:
   - Home: index.md
   - Data-prep-stage: data_prep.md
-  - Featurization: featurization.md
+  - Featurization: featurizations.md
 
 site_author: Abid Ghias
 site_description: >-

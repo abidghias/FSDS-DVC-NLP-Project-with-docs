@@ -22,3 +22,15 @@
 [2022-07-06 16:26:26,601: INFO: common]: created directory at: artifacts\prepared
 [2022-07-06 16:26:31,486: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
 
+[2022-07-06 16:37:40,283: INFO: stage_02_featurization]: 
+********************
+[2022-07-06 16:37:40,283: INFO: stage_02_featurization]: >>>>> stage Featurization started <<<<<
+[2022-07-06 16:37:40,290: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-07-06 16:37:40,294: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-07-06 16:37:40,295: INFO: common]: created directory at: artifacts\features
+[2022-07-06 16:37:42,011: INFO: common]: The input data frame artifacts\prepared\train.tsv of size (17536, 3) is read.
+[2022-07-06 16:38:11,000: INFO: data_managment]: The output matrix saved at artifacts\features\train.pkl of shape: (17536, 3002)
+[2022-07-06 16:38:11,636: INFO: common]: The input data frame artifacts\prepared\test.tsv of size (7464, 3) is read.
+[2022-07-06 16:38:15,770: INFO: data_managment]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 3002)
+[2022-07-06 16:38:16,505: INFO: stage_02_featurization]: >>>>> stage Featurization completed!<<<<<
+
